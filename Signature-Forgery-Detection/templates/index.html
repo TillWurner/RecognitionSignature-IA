@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signature Verification</title>
+</head>
+<body>
+    <h1>Signature Verification</h1>
+    <form action="/result" method="POST" enctype="multipart/form-data">
+        <label for="train_person_id">Enter person's ID:</label>
+        <input type="text" name="train_person_id" id="train_person_id" required><br>
+        
+        <label for="test_image">Upload signature image:</label>
+        <input type="file" name="test_image" id="test_image" accept="image/*" required><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
