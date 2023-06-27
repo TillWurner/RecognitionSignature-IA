@@ -15,6 +15,7 @@ import numpy as np
 from time import time
 import keras
 import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior() 
 import os
 from werkzeug.utils import secure_filename
 from flask import Flask, render_template, request
@@ -26,7 +27,6 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}  # Extensiones de archivo per
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
-tf.disable_v2_behavior() 
 
 
 genuine_image_paths = "D:\\Sem 9\\SW2\\2ndParcial - Dos\\Signature-Forgery-Detection\\real"
